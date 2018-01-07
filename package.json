@@ -1,0 +1,47 @@
+{
+  "name": "cryptocurrency-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "jest-expo": "23.0.0",
+    "react-native-scripts": "1.8.1",
+    "react-test-renderer": "16.0.0",
+    "redux-logger": "^3.0.6",
+    "remote-redux-devtools": "^0.5.12",
+    "remotedev-rn-debugger": "^0.8.3"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "postinstall": "remotedev-debugger --hostname localhost --port 5678 --injectserver"
+  },
+  "remotedev": {
+    "hostname": "localhost",
+    "port": 5678
+  },
+  "suppressConnectErrors": "false",
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "crypto-normalize": "^2.4.8",
+    "cryptocoins-icons": "^2.6.0",
+    "escape-string-regexp": "^1.0.5",
+    "expo": "^23.0.4",
+    "moment": "^2.19.4",
+    "react": "16.0.0",
+    "react-native": "0.50.3",
+    "react-native-loading-spinner-overlay": "^0.5.2",
+    "react-native-pull-to-refresh": "^2.1.2",
+    "react-native-svg-uri": "^1.2.3",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0"
+  }
+}
